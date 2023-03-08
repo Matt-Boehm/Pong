@@ -65,6 +65,7 @@
             // 
             this.GameTimer.Enabled = true;
             this.GameTimer.Interval = 20;
+            this.GameTimer.Tick += new System.EventHandler(this.timerTick);
             // 
             // PlayerScore
             // 
@@ -112,9 +113,9 @@
         private PictureBox Player1;
         private PictureBox Ball;
         private PictureBox CPU;
-        private System.Windows.Forms.Timer GameTimer;
         private Label PlayerScore;
         private Label CPUScore;
+        private System.Windows.Forms.Timer GameTimer;
     }
 
 
